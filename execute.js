@@ -9,7 +9,9 @@ let uriParameters = uri.replace("testproto://", "");
 let path = "" + uriParameters;
 
 let vscodePath = "code";
-let command = vscodePath + " --goto " + path;
+let wslArgument = "--remote wsl+Ubuntu-20.04";
+let pathArgument = (path.includes(".") ? "--goto " : "") + path; // goto only for files, rest for folders
+let command = vscodePath + " " + wslArgument + " " + pathArgument;
 
 // execute the command
 var child = exec(command, { stdio: "ignore" });
