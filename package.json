@@ -1,0 +1,15 @@
+{
+    "name": "protocol-redirector",
+    "version": "1.0.0",
+    "description": "Register custom protocols to execute commands. Used to Open VS-Code from an url-protocol",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jonas-kell/protocol-redirector.git"
+    },
+    "author": "Jonas Kell",
+    "license": "MIT",
+    "homepage": "https://github.com/jonas-kell/protocol-redirector#readme",
+    "dependencies": {
+        "protocol-registry": "^1.3.13"
+    }
+}
