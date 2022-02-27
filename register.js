@@ -8,7 +8,7 @@ let PackagedCommandLinux = `"${path.join(__dirname, "./execute-linux")}" $_URL_`
 console.log("Registering...");
 // Registers the Protocol
 ProtocolRegistry.register({
-    protocol: "testproto", // sets protocol for your command , testproto://**
+    protocol: "netbeans", // sets protocol for your command , testproto://**
     command: NodeCommand, // this will be executed with a extra argument %url from which it was initiated
     override: true, // Use this with caution as it will destroy all previous Registrations on this protocol
     terminal: false, // Use this to run your command inside a terminal

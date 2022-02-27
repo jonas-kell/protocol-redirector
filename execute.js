@@ -4,7 +4,7 @@ let uri = process.argv[2] ?? "";
 
 // path-format: /path/to/file:line:col
 
-let uriParameters = uri.replace("testproto://", "");
+let uriParameters = decodeURIComponent(uri.replace("netbeans://open/?f=", ""));
 
 let path = "" + uriParameters;
 
