@@ -16,4 +16,15 @@ If you intend to compile the `execute.js`-script, do:
 npm install -g pkg
 pkg execute.js
 ```
+# Note: My usecase for this has been fixed:
+https://github.com/microsoft/vscode-remote-release/issues/6393
 
+https://github.com/spatie/laravel-ignition/issues/21
+
+Example Laravel config now:
+
+#### **`.env`**
+``` 
+IGNITION_REMOTE_SITES_PATH='/var/www/html'
+IGNITION_LOCAL_SITES_PATH='wsl+Ubuntu-20.04/var/www/html'
+```
